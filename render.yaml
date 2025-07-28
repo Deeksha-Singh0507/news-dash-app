@@ -1,0 +1,9 @@
+sservices:
+  - type: web
+    name: news-dash-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn newsdashapp.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: newsdashapp.settings
