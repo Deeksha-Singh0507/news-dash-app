@@ -1,2 +1,2 @@
-web: gunicorn newsdashapp.wsgi:application
+web: gunicorn newsdash.wsgi:application
 
