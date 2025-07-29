@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-sservices:
+services:
   - type: web
     name: news-dash-app
     env: python
@@ -7,15 +6,4 @@ sservices:
     startCommand: "gunicorn newsdash.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: newsdashapp.settings
-=======
-sservices:
-  - type: web
-    name: news-dash-app
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn newsdashapp.wsgi:application"
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: newsdashapp.settings
->>>>>>> 77b1901010f735513d5432f2dd1a25a64dbd4841
+        value: newsdash.settings
