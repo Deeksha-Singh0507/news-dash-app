@@ -7,3 +7,5 @@ services:
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: newsdash.settings
+      - key: PYTHON_VERSION
+        value: 3.12
